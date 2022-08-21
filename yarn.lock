@@ -1213,60 +1213,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@prb/solidity-template@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "@prb/solidity-template@workspace:."
-  dependencies:
-    "@commitlint/cli": ^17.0.3
-    "@commitlint/config-conventional": ^17.0.3
-    "@ethersproject/abi": ^5.6.4
-    "@ethersproject/abstract-signer": ^5.6.2
-    "@ethersproject/bignumber": ^5.6.2
-    "@ethersproject/bytes": ^5.6.1
-    "@ethersproject/providers": ^5.6.8
-    "@nomicfoundation/hardhat-chai-matchers": ^1.0.1
-    "@nomicfoundation/hardhat-network-helpers": ^1.0.2
-    "@nomicfoundation/hardhat-toolbox": ^1.0.1
-    "@nomiclabs/hardhat-ethers": ^2.1.0
-    "@nomiclabs/hardhat-etherscan": ^3.1.0
-    "@trivago/prettier-plugin-sort-imports": ^3.2.0
-    "@typechain/ethers-v5": ^10.1.0
-    "@typechain/hardhat": ^6.1.2
-    "@types/chai": ^4.3.1
-    "@types/fs-extra": ^9.0.13
-    "@types/mocha": ^9.1.1
-    "@types/node": ^18.0.3
-    "@typescript-eslint/eslint-plugin": ^5.30.5
-    "@typescript-eslint/parser": ^5.30.5
-    chai: ^4.3.6
-    commitizen: ^4.2.4
-    cross-env: ^7.0.3
-    cz-conventional-changelog: ^3.3.0
-    dotenv: ^16.0.1
-    eslint: ^8.19.0
-    eslint-config-prettier: ^8.5.0
-    ethers: ^5.6.9
-    fs-extra: ^10.1.0
-    hardhat: ^2.10.0
-    hardhat-gas-reporter: ^1.0.8
-    husky: ^8.0.1
-    lint-staged: ^13.0.3
-    lodash: ^4.17.21
-    mocha: ^10.0.0
-    pinst: ^3.0.0
-    prettier: ^2.7.1
-    prettier-plugin-solidity: ^1.0.0-dev.21
-    shelljs: ^0.8.5
-    shx: ^0.3.4
-    solhint: ^3.3.7
-    solhint-plugin-prettier: ^0.0.5
-    solidity-coverage: ^0.7.21
-    ts-generator: ^0.1.1
-    ts-node: ^10.8.2
-    typechain: ^8.1.0
-    typescript: ^4.7.4
-  languageName: unknown
-  linkType: soft
+"@openzeppelin/contracts@npm:^4.7.0":
+  version: 4.7.0
+  resolution: "@openzeppelin/contracts@npm:4.7.0"
+  checksum: ac917e668505ffbd300fcb00fd2f39b5f1153f77f82d482988336a881134b806b2d820f4293962691ef4d6f9f8ee5ecc71da82c6eb6ad2f02810511e90fa0d96
+  languageName: node
+  linkType: hard
 
 "@scure/base@npm:~1.1.0":
   version: 1.1.1
@@ -3968,6 +3920,62 @@ __metadata:
   checksum: 1b4cac778d64ce3b582a7e26b218afe07e207a0f9bfe13cc7395a6d307849cfe361e65033c3251e00c27dd060cab43014c2d6b2647676135e18b77d2d05b3f4f
   languageName: node
   linkType: hard
+
+"eip712-vc@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "eip712-vc@workspace:."
+  dependencies:
+    "@commitlint/cli": ^17.0.3
+    "@commitlint/config-conventional": ^17.0.3
+    "@ethersproject/abi": ^5.6.4
+    "@ethersproject/abstract-signer": ^5.6.2
+    "@ethersproject/bignumber": ^5.6.2
+    "@ethersproject/bytes": ^5.6.1
+    "@ethersproject/providers": ^5.6.8
+    "@nomicfoundation/hardhat-chai-matchers": ^1.0.1
+    "@nomicfoundation/hardhat-network-helpers": ^1.0.2
+    "@nomicfoundation/hardhat-toolbox": ^1.0.1
+    "@nomiclabs/hardhat-ethers": ^2.1.0
+    "@nomiclabs/hardhat-etherscan": ^3.1.0
+    "@openzeppelin/contracts": ^4.7.0
+    "@trivago/prettier-plugin-sort-imports": ^3.2.0
+    "@typechain/ethers-v5": ^10.1.0
+    "@typechain/hardhat": ^6.1.2
+    "@types/chai": ^4.3.1
+    "@types/fs-extra": ^9.0.13
+    "@types/mocha": ^9.1.1
+    "@types/node": ^18.0.3
+    "@typescript-eslint/eslint-plugin": ^5.30.5
+    "@typescript-eslint/parser": ^5.30.5
+    chai: ^4.3.6
+    commitizen: ^4.2.4
+    cross-env: ^7.0.3
+    cz-conventional-changelog: ^3.3.0
+    dotenv: ^16.0.1
+    eslint: ^8.19.0
+    eslint-config-prettier: ^8.5.0
+    ethers: ^5.6.9
+    fs-extra: ^10.1.0
+    hardhat: ^2.10.0
+    hardhat-gas-reporter: ^1.0.8
+    husky: ^8.0.1
+    lint-staged: ^13.0.3
+    lodash: ^4.17.21
+    mocha: ^10.0.0
+    pinst: ^3.0.0
+    prettier: ^2.7.1
+    prettier-plugin-solidity: ^1.0.0-dev.21
+    shelljs: ^0.8.5
+    shx: ^0.3.4
+    solhint: ^3.3.7
+    solhint-plugin-prettier: ^0.0.5
+    solidity-coverage: ^0.7.21
+    ts-generator: ^0.1.1
+    ts-node: ^10.8.2
+    typechain: ^8.1.0
+    typescript: ^4.7.4
+  languageName: unknown
+  linkType: soft
 
 "electron-to-chromium@npm:^1.4.172":
   version: 1.4.185

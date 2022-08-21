@@ -6,13 +6,18 @@ import { resolve } from "path";
 
 import "./tasks/accounts";
 import "./tasks/deploy";
+import "./tasks/didpkh";
+import "./tasks/issue";
+import "./tasks/present";
 
 dotenvConfig({ path: resolve(__dirname, "./.env") });
 
 // Ensure that we have all the environment variables we need.
 const mnemonic: string | undefined = process.env.MNEMONIC;
-if (!mnemonic) {
-  throw new Error("Please set your MNEMONIC in a .env file");
+const privateKey: string | undefined = process.env.PRIVATE_KEY;
+
+if (!privateKey && !mnemonic) {
+  throw new Error("Please set your PRIVATE_KEY or MNEMONIC in a .env file");
 }
 
 const infuraApiKey: string | undefined = process.env.INFURA_API_KEY;
@@ -44,12 +49,18 @@ function getChainConfig(chain: keyof typeof chainIds): NetworkUserConfig {
     default:
       jsonRpcUrl = "https://" + chain + ".infura.io/v3/" + infuraApiKey;
   }
-  return {
-    accounts: {
-      count: 10,
+  let accounts;
+
+  if (privateKey) accounts = [`0x${process.env.PRIVATE_KEY}`];
+  else if (mnemonic)
+    accounts = {
+      count: 20,
       mnemonic,
       path: "m/44'/60'/0'/0",
-    },
+    };
+
+  return {
+    accounts,
     chainId: chainIds[chain],
     url: jsonRpcUrl,
   };
