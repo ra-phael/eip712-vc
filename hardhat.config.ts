@@ -5,7 +5,6 @@ import { NetworkUserConfig } from "hardhat/types";
 import { resolve } from "path";
 
 import "./tasks/accounts";
-import "./tasks/deploy";
 import "./tasks/didpkh";
 import "./tasks/issue";
 import "./tasks/present";
