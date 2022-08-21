@@ -198,7 +198,3 @@ $ yarn clean
 ## Syntax Highlighting
 
 If you use VSCode, you can get Solidity syntax highlighting via the [vscode-solidity](https://marketplace.visualstudio.com/items?itemName=JuanBlanco.solidity) extension.
-
-## License
-
-[Unlicense](./LICENSE.md)
