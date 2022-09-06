@@ -119,7 +119,15 @@ Verification passed on-chain?  true
 Gas cost:  83550
 ```
 
-As shown above, the verification consumes 83,550 gas which, with a gas price of 17 gwei for example, costs $2.39.
+As shown above, the verification consumes 83,550 gas. 
+The following table gives an estimate of the cost in dollars on Ethereum Mainnet, based on different gas prices:
+
+| Gas price (gwei) | Cost ($) |
+|------------------|----------|
+|         5        |   $0.66  |
+|        10        |   $1.32  |
+|        20        |   $2.64  |
+|        30        |   $3.96  |
 
 <br/>
 
