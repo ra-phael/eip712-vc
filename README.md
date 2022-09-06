@@ -119,6 +119,8 @@ Verification passed on-chain?  true
 Gas cost:  83550
 ```
 
+As shown above, the verification consumes 83,550 gas which, with a gas price of 17 gwei for example, costs $2.39.
+
 <br/>
 
 ## Next steps
